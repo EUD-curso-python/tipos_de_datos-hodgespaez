@@ -6,6 +6,7 @@ data = ('  GARCIA,gonzalez,        rodriguez  ,FERNANDEZ ,LOPEZ,martinez ,  sanc
 primer caracter `\n` y guardar el resultado en una variable llamada `var1`.
 """
 
+var1 = data.split('\n',1)
 
 """Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
