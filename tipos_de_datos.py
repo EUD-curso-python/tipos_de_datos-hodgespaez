@@ -229,6 +229,7 @@ print(apellidos_dict)
 """Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_none`.
 """
-apellido_none = apellidos_dict.values()
-#apellido_none = apellidos_dict.keys()
+#apellido_none = apellidos_dict.values() 
+apellido_none = apellidos_dict.setdefault(None)
+#apellido_none = apellidos_dict.keys() 
 print(apellido_none)
