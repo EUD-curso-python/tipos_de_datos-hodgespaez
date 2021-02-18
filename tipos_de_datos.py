@@ -142,14 +142,14 @@ print(apellidos_set2)
 variable `apellidos_list`.
 """
 
-apellidos_set1.append(apellidos_list[67])
+apellidos_set1.add(apellidos_list[67])
 print(apellidos_set1)
 
 """Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
 variable `apellidos_list`.
 """
 
-apellidos_set1 = apellidos_set1 + apellidos_list[68:71]
+apellidos_set1.update(apellidos_list[68:71])
 print(apellidos_set1)
 
 """Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
@@ -195,14 +195,15 @@ print(var3)
 del 0 al 4 de la lista `apellidos_lista`.
 """
 
-apellidos_dict = dict.fromkeys(apellidos_list[0:5])
+apellidos_dict = dict.fromkeys(apellidos_list[0:3])
 print(apellidos_dict)
+
 
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
 `apellidos_dict`.
 """
 
-apellidos_dict.update({"key1": 12, "key2": 24} )
+apellidos_dict.update({"key1": 12, "key2": 24})
 print(apellidos_dict)
 
 """Asignar el valor del entero `34` a la llave "gonzalez" en el diccionario 
