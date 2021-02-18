@@ -5,16 +5,15 @@ data = ('  GARCIA,gonzalez,        rodriguez  ,FERNANDEZ ,LOPEZ,martinez ,  sanc
 """Dividir el string contenido en la variable `data` en donde se encuentre el 
 primer caracter `\n` y guardar el resultado en una variable llamada `var1`.
 """
-
 var1 = data.split('\n',1)
 print(var1)
 
 """Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
 """
-var2 = data.split('\n',1)
-apellidos = var2[0]
-decimales = var2[1]
+#var2 = data.split('\n',1)
+apellidos = var1[0]
+decimales = var1[1]
 print(apellidos)
 print(decimales)
 
@@ -35,7 +34,7 @@ print(decimales_list)
 convertirlo en un entero y guardarlo en variable `var2`.
 """
 
-variable=decimales_list[39].replace(',','.')
+variable=decimales_list[38].replace(',','.')
 var2 = int(float(variable))
 print(var2)
 
@@ -71,7 +70,7 @@ print(apellido_es_mayuscula)
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
 
-apellido3 = apellido2.lower()
+apellido3 = apellido2.upper()
 print(apellido3)
 
 """Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
@@ -92,7 +91,7 @@ al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
 
-apellidos_tuple = tuple(apellidos_list[49:22:-1])
+apellidos_tuple = tuple(apellidos_list[23:49:-1])
 print(apellidos_tuple)
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
