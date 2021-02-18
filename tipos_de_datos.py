@@ -91,7 +91,7 @@ al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
 
-apellidos_tuple = tuple(apellidos_list[23:49:-1])
+apellidos_tuple = tuple(apellidos_list[49:22:-2])
 print(apellidos_tuple)
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
@@ -100,15 +100,13 @@ posición 78 de la lista `apellidos_list`.
 """
 
 apellidos_list2 = list(apellidos_tuple)
-agregar=apellidos_list[78]
-apellidos_list2.append(agregar)
-
+apellidos_list2.append(apellidos_list[78])
 print(apellidos_list2)
 
 """Eliminar el 4 elemento de la variable `apellidos_list2`.
 """
 
-apellidos_list2.pop(4)
+apellidos_list2.pop(3)
 print(apellidos_list2)
 
 """Eliminar el elemento igual a "  MORALES" de la variable `apellidos_list2`.
@@ -120,7 +118,7 @@ print(apellidos_list2)
 elemento 56 al 70 de la variable `apellidos_list`.
 """
 
-apellidos_list2 = apellidos_list2 + apellidos_list[55:70]
+apellidos_list2 = apellidos_list2 + apellidos_list[56:71]
 print(apellidos_list2)
 
 """Invertir el orden actual de la variable `apellidos_list2`.
@@ -134,8 +132,8 @@ variable `apellidos_list`, y crear variable `apellidos_set2` con elementos del
 62 al 76 de la variable `apellidos_list`.
 """
 
-apellidos_set1 = apellidos_list[55:66]
-apellidos_set2 = apellidos_list[61:76]
+apellidos_set1 = set (apellidos_list[56:67])
+apellidos_set2 = set (apellidos_list[62:77])
 
 print(apellidos_set1)
 print(apellidos_set2)
@@ -157,33 +155,33 @@ print(apellidos_set1)
 """Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
 """
 
-apellidos_set1.remove(' CAMPOS  ')
+apellidos_set1.remove(" CAMPOS  ")
 print(apellidos_set1)
 
 """Crear la variable `apellidos_set3` con la intersección entre `apellidos_set1` 
 y `apellidos_set2`.
 """
-apellidos_set3 = set (apellidos_set1) & set (apellidos_set2)
+apellidos_set3 = apellidos_set1 & apellidos_set2
 print(apellidos_set3)
 
 """Crear la variable `apellidos_set4` con la unión entre `apellidos_set1` y 
 `apellidos_set2`.
 """
-apellidos_set4 = set (apellidos_set1) | set (apellidos_set2)
+apellidos_set4 = apellidos_set1 | apellidos_set2
 print(apellidos_set4)
 
 """Crear la variable `apellidos_set5` con la diferencia de `apellidos_set1` menos 
 `apellidos_set2`.
 """
 
-apellidos_set5 = set (apellidos_set1) - set (apellidos_set2)
+apellidos_set5 = apellidos_set1 - apellidos_set2
 print(apellidos_set5)
 
 """Crear la variable `apellidos_set5` con la diferencia simétrica entre 
 `apellidos_set1` y `apellidos_set2`.
 """
 
-apellidos_set5 = set (apellidos_set1) ^ set (apellidos_set2)
+apellidos_set5 = apellidos_set1 ^ apellidos_set2
 print(apellidos_set5)
 
 """Crear la variable `var3` con la respuesta a la pregunta de si `apellidos_set3` 
@@ -197,7 +195,7 @@ print(var3)
 del 0 al 4 de la lista `apellidos_lista`.
 """
 
-apellidos_dict = dict.fromkeys(apellidos_list[0:4])
+apellidos_dict = dict.fromkeys(apellidos_list[0:5])
 print(apellidos_dict)
 
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
